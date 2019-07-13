@@ -1,0 +1,19 @@
+//inicializa o yarn para desenvolver aplicação
+yarn init -y
+
+//instala o express e suas dependencias
+yarn add express
+
+//executa o arquivo no node
+node index.js
+
+//instala a dependencia nodemon em modo de desenvolvimento
+yarn add nodemon -D
+
+//configura a execução do arquivo automaticamente
+//package.json
+"scripts": {
+    "dev": "nodemon index.js"
+  },
+
+yarn dev
