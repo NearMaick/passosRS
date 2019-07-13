@@ -31,7 +31,7 @@ git remote add <nome> <url>
 //lista os repositorios remotos
 git remote -v
 //sincroniza o repositorio local com o remoto
-git push origin master
+git push -u origin master
 //baixar o conteudo do repositório remoto no git local
 git clone <url> <nome_da_pasta>
 //baixa as alterações do remoto para o local
