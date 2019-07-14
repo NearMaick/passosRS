@@ -1,0 +1,76 @@
+//instala a dependencia eslint em modo de desenvolvimento
+yarn add eslint -D
+
+//inicializa o config do eslint
+yarn eslint --init
+
+//.eslintrc.js:
+module.exports = {
+  env: {
+    es6: true,
+    node: true,
+  },
+  extends: ['airbnb-base', 'prettier'],
+  plugins: ['prettier'],
+  globals: {
+    Atomics: 'readonly',
+    SharedArrayBuffer: 'readonly',
+  },
+  parserOptions: {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  },
+  rules: {
+    "prettier/prettier": "error",
+    "class-methods-use-this": "off",
+    "no-params-reassign": "off",
+    "camelcase": "off",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+  },
+};
+
+//verificar essas regras no settings.json
+"editor.formatOnSave": false,
+  "editor.rulers": [80, 120],
+
+  "eslint.autoFixOnSave": true,
+  "eslint.validate": [
+    {
+      "language": "javascript",
+      "autoFix": true
+    },
+    {
+      "language": "javascriptreact",
+      "autoFix": true
+    },
+    {
+      "language": "typescript",
+      "autoFix": true
+    },
+    {
+      "language": "typescriptreact",
+      "autoFix": true
+    }
+  ],
+
+//instala o prettier e dependencias conectadas a ela:
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D 
+
+//.prettierrc
+{
+  "singleQuote": true,
+  "trailingComma": "es5"
+}
+
+//formata todos os arquivos da pasta correspodente:
+yarn eslint --fix src --ext .js
+
+//.editorconfig
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true

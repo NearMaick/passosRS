@@ -7,8 +7,14 @@ yarn add express
 //executa o arquivo no node
 node index.js
 
+//executa arquivo no sucrase (verificar o nodemon.json no projeto)
+yarn sucrase-node server.js
+
 //instala a dependencia nodemon em modo de desenvolvimento
 yarn add nodemon -D
+
+//adiciona a dependencia sucrase-node
+yarn add sucrase nodemon -D
 
 //configura a execução do arquivo automaticamente
 //package.json

@@ -1,0 +1,20 @@
+//pesquisar por Docker CE
+//pesquisar doscker postgres para instalar o postgres
+
+//cria um conteiner de BD postgress redirecionando da porta TCP 5433 para 5432
+docker run --name databaseMeetApp -e POSTGRES_PASSWORD=docker123 -p 5433:5432 -d postgres
+
+//lista os conteiners ativos no Docker
+docker ps
+
+//lista todos os conteiners
+docker ps -a 
+
+//inicia um conteiner
+docker start database
+
+//finaliza a execução de um conteiner 
+docker stop database
+
+//exibe os logs do conteiner
+docker logs database
