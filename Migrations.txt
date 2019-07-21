@@ -6,3 +6,6 @@ yarn sequelize db:migrate
 
 //desfaz a ultima execução da migration
 yarn sequelize db:migrate:undo
+
+//instala dependencia yup de validação de dados
+yarn add yup

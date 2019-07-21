@@ -1,0 +1,5 @@
+//adiciona a dependencia bcrypt para geração de hash de senha
+yarn add bcryptjs
+
+//adiciona a dependencia de geração de token
+yarn add jsonwebtoken
