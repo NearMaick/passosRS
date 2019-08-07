@@ -17,3 +17,9 @@ module.exports = {
 
 //instalar dependencia de dialeto do sequelize 
 yarn add pg pg-hstore
+
+
+
+
+//adicina uma dependencia que gerencia variaveis ambiente
+yarn add dotenv

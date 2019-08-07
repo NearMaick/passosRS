@@ -1,0 +1,8 @@
+//configurar o react para usuários de linux:
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+
+yarn create react-app frontend
+
+yarn add react-router-dom
+
+yarn add axios
