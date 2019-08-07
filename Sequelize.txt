@@ -41,6 +41,9 @@ $ yarn add @sentry/node@5.5.0
 
 depedencia que corrige erros de sincronia com o sentry:
 yarn add express-async-errors
+
+//dependencia que faz uma tratativa de erros no sentry
+yarn add youch
 -----------------------------------------------------
 
 //adiciona uma dependencia que gerencia variaveis ambiente
