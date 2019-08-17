@@ -18,33 +18,3 @@ module.exports = {
 //instalar dependencia de dialeto do sequelize 
 yarn add pg pg-hstore
 
----------------------------proximo modulo--------------------
-
-//instala uma imagem do mongo
-docker run --name mongobarber -p 27017:27017 -d -t mongo
-
-//instala uma imagem do redis
-docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
-
-//adiciona um gerenciador de filas de tarefas
-yarn add bee-queue
-
-//gerenciador de emails para testes
-https://mailtrap.io
-
------------------------------------------------------------
-//gerenciador de tratamento de exceções
-https://sentry.io
-
-# Using yarn
-$ yarn add @sentry/node@5.5.0
-
-depedencia que corrige erros de sincronia com o sentry:
-yarn add express-async-errors
-
-//dependencia que faz uma tratativa de erros no sentry
-yarn add youch
------------------------------------------------------
-
-//adiciona uma dependencia que gerencia variaveis ambiente
-yarn add dotenv
