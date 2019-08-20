@@ -1,6 +1,9 @@
 //mult platform data
 yarn add multer
 
+//migration de inserir arquivos
+yarn sequelize migration:create --name=create-files
+yarn sequelize migration:create --name=add-avatar-field-to-users
 
 
 //instala uma imagem do mongo
