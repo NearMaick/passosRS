@@ -5,9 +5,18 @@ yarn add multer
 yarn sequelize migration:create --name=create-files
 yarn sequelize migration:create --name=add-avatar-field-to-users
 
+//instala um manipulador de datas na ultima versão
+yarn add date-fns@next
+
 
 //instala uma imagem do mongo
 docker run --name mongobarber -p 27017:27017 -d -t mongo
+
+//depedencia que gerencia o mongodb
+yarn add mongoose
+
+//exibe os logs do container
+docker logs <id_container>
 
 //instala uma imagem do redis
 docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
