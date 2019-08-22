@@ -18,6 +18,13 @@ yarn add mongoose
 //exibe os logs do container
 docker logs <id_container>
 
+//adiciona depedencia de gerenciamento de email
+yarn add nodemailer
+
+//portal para criar templates de email
+handlebarsjs.com
+yarn add express-handlebars nodemailer-express-handlebars 
+
 //instala uma imagem do redis
 docker run --name redisbarber -p 6379:6379 -d -t redis:alpine
 
@@ -32,7 +39,7 @@ https://mailtrap.io
 https://sentry.io
 
 # Using yarn
-$ yarn add @sentry/node@5.5.0
+yarn add @sentry/node@5.6.2
 
 depedencia que corrige erros de sincronia com o sentry:
 yarn add express-async-errors
