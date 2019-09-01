@@ -23,3 +23,28 @@ yarn add axios
 yarn add @react-native-community/async-storage
 
 yarn add prop-types
+
+//facilita a navegação entre diretorios do projeto
+yarn add customize-cra react-app-rewired -D
+
+//utiliza o "~" como referencia padrão para buscar diretorios
+yarn add babel-plugin-root-import -D
+
+yarn add eslint-import-resolver-babel-plugin-root-import -D
+
+yarn add polished
+
+//snipped da rocketseat para criar formulários
+yarn add @rocketseat/unform
+
+-----------------------Redux----------------------------------------
+
+yarn add redux redux-saga react-redux reactotron-redux reactotron-redux-saga immer
+
+yarn add axios
+
+//persiste os dados localmente
+yarn add redux-persist
+
+//exibe mensagens de erros animadas
+yarn add react-toastify
