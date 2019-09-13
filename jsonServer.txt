@@ -1,0 +1,14 @@
+---------------------------Montar uma API fake para testes------------------------------
+https://github.com/typicode/json-server
+
+npm install -g json-server
+
+//roda a fake api na porta 3333
+json-server server.json -p 3333
+
+//roda a fake api na porta 3333 com possibilidade para atualização
+json-server server.json -p 3333 -w
+
+--------------------começando o Redux-------------------------------
+
+yarn add redux react-redux

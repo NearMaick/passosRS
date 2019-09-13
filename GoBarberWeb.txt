@@ -6,3 +6,6 @@ yarn add react-router-dom
 yarn add history
 
 yarn add reactotron-react-js
+
+//biblioteca que ajusta as datas no horário local
+yarn add date-fns-tz

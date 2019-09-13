@@ -48,3 +48,10 @@ yarn add redux-persist
 
 //exibe mensagens de erros animadas
 yarn add react-toastify
+
+//pacote de ícones
+yarn add react-icons
+
+yarn add react-perfect-scrollbar
+
+yarn add date-fns@next
