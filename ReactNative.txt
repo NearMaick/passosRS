@@ -5,6 +5,10 @@ react-native run-android --deviceId emulator-5554
 react-native start
 react-native start --reset-cache
 
+//atualiza as libs para o androidX
+yarn add jetifier -D
+yarn run jetify
+
 //Reactotron
 yarn add reactotron-react-native
 
@@ -12,6 +16,10 @@ yarn add reactotron-react-native
 yarn add react-navigation react-native-gesture-handler
 
 react-native link react-native-gesture-handler
+
+yarn add react-native-linear-gradient
+react-native link react-native-linear-gradient
+
 
 //dependencia para inserir icones
 yarn add react-native-vector-icons
@@ -31,6 +39,9 @@ yarn add customize-cra react-app-rewired -D
 yarn add babel-plugin-root-import -D
 
 yarn add eslint-import-resolver-babel-plugin-root-import -D
+
+//
+yarn add babel-plugin-root-import eslint-import-resolver-babel-plugin-root-import -D
 
 yarn add polished
 
@@ -55,3 +66,11 @@ yarn add react-icons
 yarn add react-perfect-scrollbar
 
 yarn add date-fns@next
+
+yarn add reactotron-react-native reactotron-redux reactotron-redux-saga
+
+//no caso de der erro no react-navigation-tabs
+yarn add react-native-reanimated
+
+//no caso de não exibir o avatar no appointments
+adb reverse tcp:3333 tcp:3333
