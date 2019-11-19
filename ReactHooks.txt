@@ -1,3 +1,6 @@
 yarn add eslint-plugin-react-hooks -D
 
+yarn global add @rocketseat/omni
+era colocar esse export no ^/.zshrc: export PATH=$PATH:$HOME/.yarn/bin
+
 

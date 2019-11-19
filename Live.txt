@@ -1,0 +1,18 @@
+Links dos seguidores
+
+GitHoooks
+https://willianjusten.com.br/trabalhando-com-git-hooks-de-forma-facil/
+
+portainer (docker Interface gráfica)
+https://www.portainer.io
+
+//para a proxima live...
+--eslint dev dependcies
+ yarn add eslint
+
+ yarn eslint --init
+
+remover package-lock.json
+rodar yarn
+
+yarn add prettier eslint-config-prettier eslint-plugin-prettier -D

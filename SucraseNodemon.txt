@@ -1,0 +1,15 @@
+//sucraseNodemon
+yarn add sucrase nodemon -D
+
+
+//package.json
+"scipts": {
+"dev": "nodemon src/server.js"
+},
+
+//nodemon.json
+{
+  "execMap": {
+  "js": "sucrase-node"
+}
+
