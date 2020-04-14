@@ -1,0 +1,33 @@
+//entra no container correspondente
+docker exec -i -t <nome_do_container> /bin/sh
+
+//entra no container em modo root
+su postgres
+
+//cria o banco de dados
+CREATE DATABASE bootcampnodejs;
+
+//sair do container
+\q
+exit
+exit
+
+//configuração do package.json:
+
+"scripts": {
+	"build": "sucrase ./src -d ./dist --transforms imports",
+	"start": "node dist/server.js" 
+},
+
+//libera a porta 3333 para acesso externo
+sudo ufw allow 3333
+
+//roda as migrations
+npx sequelize db:migrate
+
+//para que a seesão do servidor nao fique desconectando:
+entrar em /etc/ssh/sshd_config
+
+ClientAliveInterval 30 TCP
+KeepAlive yes
+ClientAliveCountMax 99999

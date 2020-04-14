@@ -8,4 +8,12 @@ Depois é só dá um: source ~/.zshrc
 yarn global add @rocketseat/omni
 era colocar esse export no ~/.zshrc: export PATH=$PATH:$HOME/.yarn/bin
 
+não parei para ver ainda o motivo, mas se você instalar com globalmente com o npm (ao invés do yarn) vai funcionar:
+sudo npm i -g @rocketseat/omni
+
+Depois de instalado, tu pode gerenciar os pacotes do teu projeto com o yarn se preferir...sem problemas
+
+//fazer os testes sequencialmente:
+"test": "NODE_ENV=test jest -i"
+
 
